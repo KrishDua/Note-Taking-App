@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: wheat;
+}
+.containerchild,.inpbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.strike{
+    text-decoration: line-through;
+}
+h1{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px grey;
+}
+#inp{
+    width: 70%;
+    text-align: left;
+    height: 70px;
+    font-size: 30px;
+    margin-left: 20px;
+    background-color: inherit;
+    color: black;
+    border: 0px;
+    outline: none;
+}
+input::placeholder{
+    color: black;
+}
+#btn{
+    background-color: black;
+    color: white;
+    border: 0px;
+    outline: none;
+    margin: 10px;
+    font-size: 20px;
+    width: 100px;
+    transition-duration: 300ms;
+}
+.containerchild{
+    margin: 20px;
+}
+.container{
+    color: black;
+    font-size: 40px;
+}
+#chbox{
+    border: 0px;
+    outline: none;
+    width: 20px;
+    height: 30px;
+}
+#up,#down,#cross{
+    background-color: black;
+    color: white;
+    border: 0px;
+    outline: none;
+    margin: 10px;
+    font-size: 20px;
+    width: 20px; 
+    height: 30px; 
+    transition-duration: 300ms; 
+}
+#btn:hover{
+    color: wheat;
+}
+#up:hover{
+    color:wheat;
+}
+#down:hover{
+    color: wheat;
+}
+#cross:hover{
+    color: wheat;
+}
+.container .containerchild:first-child #up,
+.container .containerchild:last-child #down{
+    display: none;
+}
